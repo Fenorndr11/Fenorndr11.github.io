@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Fenotiana Randriamarojaona, étudiant en L2 informatique à Madagascar : Linux, réseaux, VoIP, backend, systèmes embarqués et cybersécurité.">
+  <meta name="theme-color" content="#101310">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fenotiana Randriamarojaona — Portfolio informatique">
+  <meta property="og:description" content="Linux, réseaux, VoIP, backend, embarqué et cybersécurité : projets, expérimentations et parcours.">
+  <title>Fenotiana — Portfolio informatique</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil"><span class="brand-mark">F.</span><span>FENOTIANA<span class="brand-sub"> / PORTFOLIO</span></span></a>
+    <nav aria-label="Navigation principale">
+      <a href="#profil">Profil</a><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact" class="nav-contact">Me contacter ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ÉTUDIANT EN L2 INFORMATIQUE · MADAGASCAR</p>
+        <h1>Comprendre les systèmes.<br><span>Construire des solutions.</span></h1>
+        <p class="intro">Je suis Fenotiana Randriamarojaona, étudiant en deuxième année d’informatique. Linux, réseaux, téléphonie IP, backend, systèmes embarqués et cybersécurité : j’apprends en expérimentant, en documentant et en améliorant mes prototypes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projets">Explorer mes projets <span>↘</span></a>
+          <a class="button secondary" href="#contact">Entrer en contact</a>
+        </div>
+        <div class="quick-facts">
+          <div><strong>Linux</strong><span>Administration & dépannage</span></div>
+          <div><strong>Réseaux & VoIP</strong><span>Routage, DNS, Asterisk</span></div>
+          <div><strong>Backend</strong><span>Supabase, PostgreSQL, Docker</span></div>
+          <div><strong>Embarqué</strong><span>ESP32, Arduino, audio</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration abstraite de systèmes informatiques">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="core"><span>F.</span><small>BUILD / TEST / LEARN</small></div>
+        <div class="float-card card-a"><span class="mini-icon">⌘</span><div><b>Linux</b><small>System exploration</small></div><i>↗</i></div>
+        <div class="float-card card-b"><span class="mini-icon green">⌁</span><div><b>Networking</b><small>Connect the pieces</small></div><i>↗</i></div>
+        <div class="float-card card-c"><span class="mini-icon orange">⌬</span><div><b>Embedded</b><small>Signals & devices</small></div><i>↗</i></div>
+        <div class="art-label">FIG. 01 — LEARNING BY BUILDING</div>
+      </div>
+    </section>
+
+    <section class="section profile-section" id="profil">
+      <div class="section-heading"><p class="eyebrow">01 / À PROPOS</p><h2>Un profil curieux,<br>orienté pratique.</h2></div>
+      <div class="profile-text">
+        <p>Étudiant en deuxième année de licence en informatique (L2 MIT) à la MISA de l'université d'Antananarivo Madagascar, je m’intéresse autant aux couches basses du système qu’aux applications visibles par l’utilisateur. Mon cursus couvre les systèmes embarqués, les réseaux, le développement web, la cybersécurité et le génie logiciel avec Qt/C++.</p>
+        <p>Ma méthode : apprendre les bases, les mettre en pratique sur une machine réelle, diagnostiquer les erreurs, puis comprendre pourquoi une solution fonctionne — ou échoue. Mon environnement de travail quotidien est Parrot OS.</p>
+        <p>Ce portfolio rassemble mes travaux, mes projets d’équipe et mes expérimentations. Le statut de chaque projet est indiqué pour rester transparent : prototype, laboratoire ou travail en cours.</p>
+        <div class="tags"><span>Autonomie</span><span>Résolution de problèmes</span><span>Travail en équipe</span><span>Apprentissage continu</span><span>Documentation</span></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projets">
+      <div class="section-title-row"><div><p class="eyebrow">02 / SÉLECTION</p><h2>Projets & expérimentations</h2></div><p class="section-note">Des projets pratiques, avec une démarche progressive et documentée.</p></div>
+      <div class="project-grid">
+
+        <article class="project-card featured">
+          <div class="project-visual visual-asterisk"><div class="phone phone-left">318<span>PJSIP</span></div><div class="connection"></div><div class="server"><span>✳</span><b>ASTERISK</b><small>CALL CONTROL</small></div><div class="phone phone-right">319<span>PJSIP</span></div></div>
+          <div class="project-info"><div class="project-meta"><span>VOIX SUR IP</span><span class="project-status">Prototype</span></div><h3>Téléphonie IP avec Asterisk</h3><p>Asterisk 22 compilé depuis les sources sur Parrot OS, avec PJSIP, deux extensions de test et un plan de numérotation. Conception d’un système de facturation par AGI : scripts Python, soldes stockés dans des fichiers et durée d’appel limitée selon le crédit. Étude du SIP trunking entre deux serveurs (authentification par IP ou par identifiants, routage par préfixe).</p><div class="project-tags"><span>Asterisk</span><span>PJSIP</span><span>AGI / Python</span><span>SIP trunk</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#7fe0b0"><div class="glyph-wrap"><div class="glyph">{ auth }</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>REACT NATIVE · EXPO · SUPABASE</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>PROJET D’ÉQUIPE</span><span class="project-status">En cours</span></div><h3>ConnecteoAPP — pôle Backend</h3><p>Application mobile de messagerie et d’alertes avec mode hors-réseau (ESP32 / LoRa), développée par une équipe de 19 étudiants. Je suis dans le pôle Backend et responsable de la partie utilisateur : inscription et connexion par e-mail, profil, modification des informations personnelles, avec un backend Supabase auto-hébergé sous Docker.</p><div class="project-tags"><span>React Native</span><span>Expo</span><span>Supabase</span><span>Docker</span><span>Git</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-esp"><div class="wave wave1"></div><div class="wave wave2"></div><div class="chip"><span>ESP32</span><small>ADC · Wi-Fi · UDP</small></div><div class="meter"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+          <div class="project-info"><div class="project-meta"><span>SYSTÈMES EMBARQUÉS · EN BINÔME</span><span class="project-status">En développement</span></div><h3>TestaSon — analyse audio ESP32</h3><p>Système audio multi-modes (vumètre, alarme, panneau diffuseur QRD) : microphone MAX9814 sur l’ADC de l’ESP32, flux UDP vers Processing et FFT calculée côté PC. Répartition des tâches FreeRTOS sur les deux cœurs. Migration en cours vers un Raspberry Pi qui remplace le PC comme récepteur. Matériel assemblé avec Valisoa.</p><div class="project-tags"><span>ESP32</span><span>FreeRTOS</span><span>Processing</span><span>UDP</span><span>FFT</span><span>Raspberry Pi</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#8fd3ff"><div class="glyph-wrap"><div class="glyph">SELECT *</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>POSTGRESQL · RLS · TRIGGERS</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>BACKEND & BASES DE DONNÉES</span><span class="project-status">Apprentissage + projet</span></div><h3>Supabase & PostgreSQL</h3><p>Parcours de 14 modules, des bases du HTTP jusqu’à un projet complet : application React + Vite sur Supabase auto-hébergé, inscription via l’authentification Supabase, table de profils synchronisée par un trigger PostgreSQL et politiques de sécurité par ligne (RLS).</p><div class="project-tags"><span>Supabase</span><span>PostgreSQL</span><span>React + Vite</span><span>RLS</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-network"><div class="node n1">PC1</div><div class="node n2">PC2</div><div class="node n3">Wi-Fi</div><div class="network-line l1"></div><div class="network-line l2"></div><div class="network-line l3"></div><div class="net-caption">192.168.x.0/24</div></div>
+          <div class="project-info"><div class="project-meta"><span>RÉSEAUX</span><span class="project-status">Laboratoires</span></div><h3>DNS, routage et passerelle Linux</h3><p>Passerelle Linux reliant plusieurs segments via Wi-Fi et Ethernet. Diagnostic d’un transfert de zone BIND9 maître/esclave (PTR dans le mauvais fichier, accolades d’ACL erronées, TCP/53 bloqué par le pare-feu). Labo de routage statique sous Packet Tracer, sous-réseaux VLSM et cours DNS interactif en HTML.</p><div class="project-tags"><span>BIND9</span><span>Routage</span><span>VLSM</span><span>Packet Tracer</span><span>OSI</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#b9f36b"><div class="glyph-wrap"><div class="glyph">G(n,p)</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>BFS · BRON–KERBOSCH · TKINTER</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>ALGORITHMIQUE · PYTHON</span><span class="project-status">Projet académique</span></div><h3>Graphes : de la théorie au projet</h3><p>Projet en Python : génération d’un graphe aléatoire d’Erdős–Rényi, extraction d’un graphe connexe, parcours en largeur, cliques maximales (Bron–Kerbosch) et classification de suspects, sans bibliothèque de graphes. Interface tkinter, import dans Neo4j et présentation LaTeX Beamer. En parallèle : BFS, DFS, Dijkstra, Bellman-Ford, tri topologique, Kruskal et Prim.</p><div class="project-tags"><span>Python</span><span>tkinter</span><span>Neo4j</span><span>LaTeX Beamer</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#ffb27f"><div class="glyph-wrap"><div class="glyph">Qt/C++</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>QTABLEWIDGET · UNDO · DELEGATE</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>GÉNIE LOGICIEL · C++</span><span class="project-status">Travaux de cours</span></div><h3>Applications de bureau Qt/C++</h3><p>Calculatrice matricielle (QStackedWidget, saisie validée par un délégué) et application de gestion d’inscriptions avec tableau paginé, édition en ligne, annulation d’actions, raccourcis clavier et import/export de fichiers. Qt 6.11 compilé depuis les sources et kit configuré à la main dans QtCreator.</p><div class="project-tags"><span>C++</span><span>Qt 6</span><span>QtCreator</span><span>POO</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#ff9c68"><div class="glyph-wrap"><div class="glyph">LDR → SVG</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>ARDUINO · CGI · APACHE2</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>EMBARQUÉ & WEB</span><span class="project-status">Prototype</span></div><h3>Tableau de bord photorésistance</h3><p>Tableau de bord Arduino servi par Apache2 en CGI : programme C++ pur, rafraîchissement par balise meta (sans JavaScript) et jauges SVG générées côté serveur. Résolution de plusieurs bugs système : isolation PrivateTmp, accès au port série par le groupe dialout, conversions sécurisées.</p><div class="project-tags"><span>C++</span><span>Arduino</span><span>Apache2 CGI</span><span>SVG</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-map"><div class="map-grid"></div><svg viewBox="0 0 320 180" role="img" aria-label="Réseau de points reliés"><path d="M30 130 L75 65 L135 88 L180 35 L235 68 L290 30 M75 65 L95 145 L160 130 L235 68 L250 145 L160 130 M135 88 L180 35" fill="none" stroke="currentColor" stroke-width="2"/><g fill="#b9f36b"><circle cx="30" cy="130" r="5"/><circle cx="75" cy="65" r="5"/><circle cx="135" cy="88" r="5"/><circle cx="180" cy="35" r="5"/><circle cx="235" cy="68" r="5"/><circle cx="290" cy="30" r="5"/><circle cx="95" cy="145" r="5"/><circle cx="160" cy="130" r="5"/><circle cx="250" cy="145" r="5"/></g></svg><span class="map-label">OSM → GRAPH</span></div>
+          <div class="project-info"><div class="project-meta"><span>DONNÉES GÉOGRAPHIQUES</span><span class="project-status">Exploration</span></div><h3>OpenStreetMap & Neo4j</h3><p>Exploration de données OSM, extraction de chemins et attributs de ponts, puis réflexion sur la représentation d’un réseau routier dans un graphe Neo4j interrogeable.</p><div class="project-tags"><span>OpenStreetMap</span><span>Neo4j</span><span>Graphes</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-linux"><div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>terminal — parrot</span></div><p><b>fenotiana@lab</b>:~$ ip route</p><p class="term-green">default via 192.168.2.1</p><p><b>fenotiana@lab</b>:~$ systemctl status</p><p class="term-muted">● services / logs / diagnostics</p><div class="cursor"></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>ADMINISTRATION SYSTÈME</span><span class="project-status">Pratique continue</span></div><h3>Laboratoire Linux sous Parrot OS</h3><p>Environnement quotidien sous Parrot OS (Debian 13) : démarrage UEFI/GRUB, Docker Engine et Podman rootless, Samba/PAM, synchronisation NTP avec chrony, proxy transparent Tor via iptables. Diagnostic de problèmes concrets : pilote Wi-Fi RT5390, dépôts apt, crashs OpenGL liés aux options de montage noexec.</p><div class="project-tags"><span>Parrot OS</span><span>Docker</span><span>Podman</span><span>iptables</span><span>GRUB</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#ff7f8f"><div class="glyph-wrap"><div class="glyph">SOC</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>HACKTHEBOX · WAZUH · SURICATA</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>CYBERSÉCURITÉ</span><span class="project-status">Veille & pratique</span></div><h3>HackTheBox & supervision de sécurité</h3><p>Pratique sur HackTheBox et étude de l’architecture de HTB Academy (parcours, modules, Pwnbox sous Parrot OS). Évaluation d’une pile SOC open source (Wazuh, Suricata, MISP, TheHive, Cortex) : conclusion de ne pas tout héberger sur un seul serveur, mais d’utiliser un agent Wazuh et Suricata en IDS passif, avec le gestionnaire sur une machine séparée.</p><div class="project-tags"><span>HackTheBox</span><span>Wazuh</span><span>Suricata</span><span>IDS</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#c9a7ff"><div class="glyph-wrap"><div class="glyph">n8n ⇄</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>N8N · POSTGRESQL · TRAEFIK</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>AUTOMATISATION</span><span class="project-status">Mise en place</span></div><h3>Pile d’automatisation n8n</h3><p>Mise en place d’une pile de production pour automatiser des workflows : n8n sous Docker, base PostgreSQL et reverse proxy Traefik. Points critiques maîtrisés : clé de chiffrement des identifiants et URL publique des webhooks.</p><div class="project-tags"><span>n8n</span><span>Docker</span><span>PostgreSQL</span><span>Traefik</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-glyph" style="--c:#ffd36e"><div class="glyph-wrap"><div class="glyph">CPU ≠ GPU</div><div class="glyph-bars"><i></i><i></i><i></i><i></i></div><small>PPTX · SCRIPTS D’ORAL · FICHES</small></div></div>
+          <div class="project-info"><div class="project-meta"><span>COMMUNICATION TECHNIQUE</span><span class="project-status">Réalisé</span></div><h3>Présentations « CPU vs GPU » et « From Sand to CPU »</h3><p>Deux présentations de vulgarisation sur l’architecture des ordinateurs, de la fabrication du silicium au processeur. Conception visuelle, scripts d’oral et fiches de mots-clés pour s’entraîner à expliquer des notions techniques de façon claire.</p><div class="project-tags"><span>Architecture</span><span>Vulgarisation</span><span>PowerPoint</span></div></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-web"><div class="browser"><div class="browser-top"><span></span><span></span><span></span></div><div class="browser-layout"><div class="browser-side"></div><div class="browser-content"><b>&lt;html&gt;</b><div></div><div></div><div class="short"></div><span>Build your first page.</span></div></div></div></div>
+          <div class="project-info"><div class="project-meta"><span>DÉVELOPPEMENT WEB</span><span class="project-status">Apprentissage</span></div><h3>Fondations HTML & CSS (et ce portfolio)</h3><p>Apprentissage structuré des balises HTML, de la sémantique et de la mise en page CSS responsive, avec des mini-exercices. Ce portfolio est lui-même un site statique hébergé sur GitHub Pages.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive design</span><span>GitHub Pages</span></div></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section skills-section" id="competences">
+      <div class="section-title-row"><div><p class="eyebrow">03 / COMPÉTENCES</p><h2>Ce que je pratique</h2></div><p class="section-note">Outils réellement utilisés dans mes projets, classés par domaine.</p></div>
+      <div class="skills-grid">
+        <div class="skill-group"><div class="skill-number">01</div><h3>Systèmes Linux</h3><p>Administration sous Parrot OS / Debian, services, démarrage UEFI/GRUB, conteneurs et dépannage.</p><div class="project-tags"><span>Bash</span><span>Docker</span><span>Podman</span><span>iptables</span><span>chrony</span><span>Samba</span></div></div>
+        <div class="skill-group"><div class="skill-number">02</div><h3>Réseaux & VoIP</h3><p>Adressage IPv4, VLSM, routage, DNS et téléphonie IP.</p><div class="project-tags"><span>BIND9</span><span>Packet Tracer</span><span>GNS3</span><span>Asterisk</span><span>PJSIP</span><span>SIP</span></div></div>
+        <div class="skill-group"><div class="skill-number">03</div><h3>Programmation</h3><p>Développement orienté objet, interfaces graphiques et algorithmique.</p><div class="project-tags"><span>C++</span><span>Qt</span><span>Python</span><span>Java Swing</span><span>HTML / CSS</span><span>Algorithmes de graphes</span></div></div>
+        <div class="skill-group"><div class="skill-number">04</div><h3>Backend & données</h3><p>Authentification, modélisation et sécurité des données, graphes.</p><div class="project-tags"><span>Supabase</span><span>PostgreSQL</span><span>RLS</span><span>React + Vite</span><span>Neo4j</span><span>n8n</span></div></div>
+        <div class="skill-group"><div class="skill-number">05</div><h3>Embarqué & IoT</h3><p>Acquisition de signal, communication réseau et traitement temps réel.</p><div class="project-tags"><span>ESP32</span><span>Arduino</span><span>FreeRTOS</span><span>UDP</span><span>Processing</span><span>Raspberry Pi</span></div></div>
+        <div class="skill-group"><div class="skill-number">06</div><h3>Cybersécurité</h3><p>Pratique en laboratoire et réflexion sur la supervision de sécurité.</p><div class="project-tags"><span>HackTheBox</span><span>HTB Academy</span><span>Wazuh</span><span>Suricata</span></div></div>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="parcours">
+      <div class="section-title-row"><div><p class="eyebrow">04 / PARCOURS</p><h2>Formation & expériences</h2></div><p class="section-note">Du cursus universitaire aux projets d’équipe et à la pratique personnelle.</p></div>
+      <div class="timeline">
+        <div class="t-item"><p class="t-date">FORMATION ACTUELLE</p><h3>Licence en informatique — 2ᵉ année (L2 MIT)</h3><p>Systèmes embarqués, réseaux, développement web, cybersécurité, génie logiciel avec Qt/C++, algorithmique et probabilités-statistiques.</p></div>
+        <div class="t-item"><p class="t-date">PROJET D’ÉQUIPE</p><h3>ConnecteoAPP — développeur backend</h3><p>Pôle Backend d’une équipe de 19 personnes : authentification, profils utilisateurs et infrastructure Supabase auto-hébergée sous Docker.</p></div>
+        <div class="t-item"><p class="t-date">PROJET EN BINÔME</p><h3>TestaSon — acquisition et analyse audio</h3><p>Conception de l’architecture ESP32 → UDP → Processing, puis migration vers Raspberry Pi, en collaboration avec Valisoa.</p></div>
+        <div class="t-item"><p class="t-date">FREELANCE</p><h3>Lancement de mon activité de développeur</h3><p>Mise en place de mes profils Upwork et ComeUp (service « Site & Développement »), d’un compte de paiement, d’un CV en PDF et d’une pile d’automatisation n8n.</p></div>
+        <div class="t-item"><p class="t-date">PRATIQUE CONTINUE</p><h3>Laboratoires personnels</h3><p>Parrot OS, VoIP, HackTheBox et HTB Academy, cours Supabase en 14 modules, Docker et Podman.</p></div>
+        <div class="t-item"><p class="t-date">PROCHAINE ÉTAPE</p><h3>Consolider et publier</h3><p>Terminer la migration de TestaSon, ajouter des captures d’écran et des dépôts GitHub documentés pour chaque projet.</p></div>
+      </div>
+    </section>
+
+    <section class="learning-strip">
+      <div><p class="eyebrow">EN CE MOMENT</p><h2>Apprendre, tester,<br>puis documenter.</h2></div>
+      <div class="learning-list"><p><span>↗</span> Migration de TestaSon vers Raspberry Pi</p><p><span>↗</span> Backend Supabase pour ConnecteoAPP</p><p><span>↗</span> Parcours HTB Academy et détection d’intrusion</p><p><span>↗</span> Projets plus propres, reproductibles et documentés</p></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">05 / CONTACT</p><h2>Un projet ou une idée<br>à construire ensemble ?</h2>
+      <p>Je suis ouvert aux stages, aux collaborations étudiantes, aux missions freelance adaptées à mon niveau et aux échanges techniques.</p>
+      <div class="contact-actions"><a class="button primary" id="contact-mail" href="mailto:randriamarojaonafenotianaboss@gmail.com">M’écrire par e-mail ↗</a><a class="button secondary" id="contact-github" href="https://github.com/Fenorndr11" target="_blank" rel="noreferrer">Voir GitHub ↗</a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#accueil"><span class="brand-mark">F.</span><span>FENOTIANA</span></a><span>Portfolio personnel · Madagascar</span><span>© <span id="year"></span> — Construit avec HTML & CSS</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
